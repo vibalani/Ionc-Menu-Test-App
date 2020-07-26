@@ -1,0 +1,7 @@
+{
+  "name": "My_First_Real_Menu_App",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
