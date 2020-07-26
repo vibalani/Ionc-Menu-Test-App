@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-items>
+      <ion-item>
+        <ion-input clearInput  placeholder="Note Header" class="fields" type="text" [(ngModel)]="headerName"></ion-input>
+      </ion-item>
+    </ion-items>
+        <ion-icon name="checkmark" slot="end" (click)="okClick()" size="large" class="ok-button" ></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="text-center" style="border:1px solid red;">
+    <span>Last Saved: {{lastSavedTime | date: 'MM-dd'}}</span>
+  </div>
+  <div class="textarea" fullscreen>
+    <ion-textarea auto-grow="true"  placeholder="Enter more information here..." [(ngModel)]="text"></ion-textarea>
+  </div>
+</ion-content>
